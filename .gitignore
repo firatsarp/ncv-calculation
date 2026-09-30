@@ -1,3 +1,6 @@
-notebooks/data
-notebooks/cifar_net.pth
-.ipynb_checkpoints/
+node_modules/
+.next/
+.vercel/
+npm-debug.log*
+*.log
+.DS_Store
