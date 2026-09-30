@@ -1,6 +1,6 @@
 node_modules/
 .next/
 .vercel/
-npm-debug.log*
 *.log
+*.zip
 .DS_Store
