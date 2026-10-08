@@ -1,10 +1,14 @@
+import { requireSession } from '../lib/auth';
+import AuthControls from './auth-controls';
+export const dynamic = 'force-dynamic';
 import Link from 'next/link';
 
 const BUILD='2026.09.30-vercel-r2';
-const OWNER='Fırat SARP';
+const OWNER='Fırat SARP & Adem Şenocak';
 
-export default function Home(){
-  return <main className="homeMain">
+export default async function Home(){
+  await requireSession();
+  return <><AuthControls /><main className="homeMain">
     <header className="homeHeader">
       <div>
         <p className="eyebrow">Istanbul WtE • Waste NCV Engineering Tools</p>
@@ -44,5 +48,5 @@ export default function Home(){
     </section>
 
     <div className="note homeNote"><strong>Method note:</strong> HZI Rev. 3.1 formally defines the 3-hour and 8-hour NCV outputs. The 10-minute value is retained as an engineering estimate for operational trending.</div>
-  </main>;
+  </main></>;
 }
