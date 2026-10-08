@@ -30,4 +30,23 @@ export default async function Home(){
           <p className="eyebrow">Historian calculation</p>
           <h2>NCV Calculation</h2>
           <p>Upload historian XLS/XLSX data and calculate the 10-minute engineering estimate, 3-hour NCV and 8-hour NCV for each available line.</p>
-          <div className="featureTags"><span>10 min</span><span>3 h</span><span>8 h</span><span>Excel ¶»§q«^
+          <div className="featureTags"><span>10 min</span><span>3 h</span><span>8 h</span><span>Excel export</span></div>
+        </div>
+        <div className="openArrow">â†’</div>
+      </Link>
+
+      <Link href="/scenario" className="functionCard card">
+        <div className="functionNo">02</div>
+        <div>
+          <p className="eyebrow">What-if engineering model</p>
+          <h2>NCV & Throughput Scenario</h2>
+          <p>Select an Actual date/time, change waste and process conditions, compare projected NCV / heat input / capacity, and export hourly projections.</p>
+          <div className="featureTags"><span>Actual date/time</span><span>What-if</span><span>Hourly projection</span><span>Excel export</span></div>
+        </div>
+        <div className="openArrow">â†’</div>
+      </Link>
+    </section>
+
+    <div className="note homeNote"><strong>Method note:</strong> HZI Rev. 3.1 formally defines the 3-hour and 8-hour NCV outputs. The 10-minute value is retained as an engineering estimate for operational trending.</div>
+  </main>;
+}
