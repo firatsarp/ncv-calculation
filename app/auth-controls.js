@@ -1,5 +1,8 @@
 export default function AuthControls() {
-  return <form action="/api/auth/logout" method="post" style={{ padding: '12px 24px', display: 'flex', justifyContent: 'flex-end' }}>
-    <button type="submit">Çıkış yap</button>
-  </form>;
+  return <div className="authBar">
+    <form className="authSession" action="/api/auth/logout" method="post">
+      <span className="authStatus"><span className="authDot" aria-hidden="true" />Yetkili oturum</span>
+      <button className="logoutButton" type="submit"><span>Çıkış yap</span><span aria-hidden="true">↗</span></button>
+    </form>
+  </div>;
 }
